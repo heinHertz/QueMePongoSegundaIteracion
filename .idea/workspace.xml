@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bb9c26b-6a8f-4980-955b-b220c0f96350" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="QueMePongo" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aGjubaH00IQNeC4c5Atvq3uePf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bb9c26b-6a8f-4980-955b-b220c0f96350" name="Default Changelist" comment="" />
+      <created>1586369047633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586369047633</updated>
+      <workItem from="1586369055312" duration="61000" />
+      <workItem from="1586369161748" duration="3230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="345" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586380904276">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="345" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1586380904276" />
+    <state x="591" y="0" width="539" height="864" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586380899964">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="591" y="0" width="539" height="864" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1586380899964" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586369387436">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586369387436" />
+    <state x="822" y="102" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586371112677">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="822" y="102" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1586371112677" />
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1586371212865">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1586371212865" />
+  </component>
+</project>
