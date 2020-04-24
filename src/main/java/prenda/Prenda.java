@@ -66,6 +66,19 @@ public class Prenda {
         return colorSecundario;
     }
 
+    public void restablecerEstadoAnterior(Prenda prenda){
+
+        return this;
+
+
+    }
+
+    public Prenda guardarBorrador(){
+
+        return this;
+
+    }
+
 
     // ESTO SIRVE SI AL COMPARAR DOS OBJETOS PRENDA , SON IGUALES SI TIENEN LAS MISMAS ATRIBUTOS CON LOS MISMOS VALORES
     @Override
