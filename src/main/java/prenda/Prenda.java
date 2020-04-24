@@ -1,9 +1,6 @@
 package main.java.prenda;
 
-import main.java.utiles.CategoriaException;
-import main.java.utiles.ColorException;
-import main.java.utiles.MaterialException;
-import main.java.utiles.TipoPrendaException;
+import main.java.utiles.*;
 
 import java.util.Objects;
 
@@ -22,46 +19,25 @@ public class Prenda {
     public Prenda( TipoPrenda tipoPrenda, Categoria categoria, Material material, Color colorPrimario, Color colorSecundario){
 
 
-        this.setTipoPrenda( tipoPrenda, categoria );
-
-        this.setCategoria(categoria);
-
-        this.setMaterial(material);
-
-        this.setColorPrimario( colorPrimario);
-
-        this.colorSecundario = colorSecundario;
-
-
-    }
-
-    public void setTipoPrenda(TipoPrenda tipoPrenda, Categoria categoria) {
-        if(!tipoPrenda.getCategoria().equals(categoria))
-            throw new TipoPrendaException( "Las Prendas deben Corresponder Con su Tipo De Prenda. (Ej, una remera no puede ser calzado)");
+        if( !tipoPrenda.getCategoria().equals(categoria)  ||
+                categoria.equals(null) ||
+                material.equals(null) ||
+                colorPrimario.equals(null) )
+            throw new PrendaException( "Debe ingresar una Prenda con los datos Correctos)");
         else
-            this.tipoPrenda = tipoPrenda;
-    }
+        {
+            this.tipoPrenda =  tipoPrenda;
 
-    public void setCategoria(Categoria categoria) {
-        if(categoria.equals(null))
-            throw new CategoriaException("Categoria NUll, debe asignar Una Categoria correcta");
-       else
-           this.categoria = categoria;
-    }
+            this.categoria = categoria;
 
-    public void setMaterial(Material material ) {
-        if(material.equals(null) )
-            throw new MaterialException("Material NUll, debe asignar Un Material Correcto");
-        else
             this.material = material;
-    }
 
+            this.colorPrimario = colorPrimario;
 
-    public void setColorPrimario(Color colorPrimario) {
-        if(  colorPrimario.equals(null)   )
-            throw new ColorException("Color NUll, debe asignar Un Color Primario");
-        else
-             this.colorPrimario = colorPrimario;
+            this.colorSecundario = colorSecundario;
+
+        }
+
     }
 
     public void setColorSecundario(Color colorSecundario) {
