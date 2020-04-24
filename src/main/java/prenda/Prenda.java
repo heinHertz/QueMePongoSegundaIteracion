@@ -16,7 +16,7 @@ public class Prenda {
 
     Color colorSecundario;
 
-    public Prenda( TipoPrenda tipoPrenda, Categoria categoria, Material material, Color colorPrimario, Color colorSecundario){
+    public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario, Color colorSecundario,Categoria categoria){
 
 
         if( !tipoPrenda.getCategoria().equals(categoria)  ||
