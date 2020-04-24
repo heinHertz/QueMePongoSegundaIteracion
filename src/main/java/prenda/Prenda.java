@@ -16,6 +16,9 @@ public class Prenda {
 
     Color colorSecundario;
 
+    Trama trama;
+
+
     public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario, Color colorSecundario,Categoria categoria){
 
 
