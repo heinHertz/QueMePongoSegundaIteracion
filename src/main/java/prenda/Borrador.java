@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import utiles.MaterialException;
 
-//import prenda.*;
+
 
 public class Borrador {
 	
@@ -45,11 +45,6 @@ public class Borrador {
     
     }
     
-//	  method crearPrenda
-//      // resto de las validaciones que sigan siendo necesarias [2]
-//      // y que ya no son necesarias en Prenda
-//      // dado que SIEMPRE construiremos la prenda a través del borrador
-//      return new Prenda(tipo, material, colorPrincipal, colorSecundario, trama)
 
 
 	public void setTipoPrenda(TipoPrenda tipoPrenda) {

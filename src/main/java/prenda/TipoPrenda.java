@@ -7,7 +7,6 @@ import java.util.Objects;
 public class TipoPrenda {
 
 	
-	// REMERA, PANTALON, POLLERA, CAMISA_MANGA_CORTA, BLUSA ;
 	
 	
     Categoria categoria;

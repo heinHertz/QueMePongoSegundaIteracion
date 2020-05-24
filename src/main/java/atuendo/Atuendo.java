@@ -3,9 +3,9 @@ package atuendo;
 import prenda.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.List;
-import java.util.Map;
+
 import java.util.Objects;
 
 public class Atuendo {
@@ -14,7 +14,7 @@ public class Atuendo {
 
     public void agregarPrenda( Prenda prendaNueva){
 
-    	prendas.add( Objects.requireNonNull(prendaNueva, "color es obligatorio") );
+    	prendas.add( Objects.requireNonNull(prendaNueva, "prenda no debe ser nula") );
 
     }
 
