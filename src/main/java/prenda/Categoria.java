@@ -1,4 +1,4 @@
-package main.java.prenda;
+package prenda;
 
 public enum Categoria {
 

@@ -1,4 +1,4 @@
-package main.java.utiles;
+package utiles;
 
 public class MaterialException extends RuntimeException {
     public MaterialException(String message) {super(message);}

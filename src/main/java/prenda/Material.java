@@ -1,14 +1,12 @@
-package main.java.prenda;
+package prenda;
 
 public enum Material {
 
-    CUERO {},
-    LANA,
-    PLASTICO,
-    SEDA,
-    POLIESTER,
-    DENIM,
-    ALGODON;
+    CUERO,   // remera   sup  inferior
+    LANA,   // remera o pantalon
+     PLASTICO,   // accesorio
+    POLIESTER,  // remera o pantalon
+    ALGODON;  // remera
 
 
 }

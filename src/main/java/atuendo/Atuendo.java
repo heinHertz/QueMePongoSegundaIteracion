@@ -1,15 +1,12 @@
-package main.java.atuendo;
+package atuendo;
 
-import main.java.prenda.Categoria;
-import main.java.prenda.Color;
-import main.java.prenda.Material;
-import main.java.prenda.Prenda;
-import main.java.utiles.CategoriaException;
+import prenda.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class Atuendo {
 
@@ -17,11 +14,7 @@ public class Atuendo {
 
     public void agregarPrenda( Prenda prendaNueva){
 
-        if(tieneCategoriaValida(prendaNueva))
-            prendas.add(prendaNueva);
-        else
-            throw new CategoriaException("Debe ingresar al Atuendo una prenda Cuya Categoria esté Disponible");
-
+    	prendas.add( Objects.requireNonNull(prendaNueva, "color es obligatorio") );
 
     }
 

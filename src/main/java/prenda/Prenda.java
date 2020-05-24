@@ -14,14 +14,22 @@ public class Prenda {
     Color colorPrimario;
 
     Color colorSecundario;
+    
+    Trama trama;
 
-    public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario){
+    public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario,Color colorSecundario, Trama trama){
 
     	this.tipoPrenda = Objects.requireNonNull(tipoPrenda, "tipo de prenda es obligatorio");
     	
     	this.material = Objects.requireNonNull(material, "material es obligatorio");
     			  
     	this.colorPrimario = Objects.requireNonNull(colorPrimario, "color es obligatorio");
+    	
+    	this.colorSecundario = Objects.requireNonNull(colorSecundario, "color es obligatorio");
+    	
+
+    	this.trama = Objects.requireNonNull(trama, "trama es obligatorio");
+        
 
     }
 

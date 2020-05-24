@@ -1,33 +1,33 @@
-package main.java.prenda;
+package prenda;
 
-import main.java.utiles.CategoriaException;
+import java.util.Objects;
+
+//import utiles.CategoriaException;
 
 public class TipoPrenda {
 
+	
+	// REMERA, PANTALON, POLLERA, CAMISA_MANGA_CORTA, BLUSA ;
+	
+	
     Categoria categoria;
 
-    String nombrePrenda;
 
-    public TipoPrenda(String nombrePrenda , Categoria categoria){
+    public TipoPrenda( Categoria categoria){
 
-        this.nombrePrenda = nombrePrenda;
-
-        this.setCategoria(categoria);
-
+    	this.setCategoria(categoria);
+   
     }
 
     public Categoria getCategoria() {
         return categoria;
     }
 
-    public String getNombrePrenda(){ return nombrePrenda; }
-
     public void setCategoria(Categoria categoria) {
-        if(categoria.equals(null))
-            throw new CategoriaException("Categoria NUll, debe asignar Una Categoria correcta");
-        else
-            this.categoria = categoria;
+     
+        this.categoria = Objects.requireNonNull(categoria, "no debe Ingresar Categoria Nula");
     }
+
 
 
 

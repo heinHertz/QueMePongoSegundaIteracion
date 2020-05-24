@@ -1,4 +1,4 @@
-package main.java.utiles;
+package utiles;
 
 
 public class TipoPrendaException extends RuntimeException {
