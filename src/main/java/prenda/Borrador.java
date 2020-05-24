@@ -10,7 +10,7 @@ public class Borrador {
 	
 	 TipoPrenda tipoPrenda;
 
-	    Categoria categoria;
+	 //   Categoria categoria;
 
 	    Material material;
 
@@ -31,8 +31,6 @@ public class Borrador {
     public Prenda crearPrenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario,Color colorSecundario, Trama trama) {
     	
     	this.tipoPrenda = Objects.requireNonNull(tipoPrenda, "tipo de prenda es obligatorio");
-    	
-    	this.material = Objects.requireNonNull(material, "material es obligatorio");
     			  
     	this.colorPrimario = Objects.requireNonNull(colorPrimario, "color es obligatorio");
     	
@@ -40,6 +38,8 @@ public class Borrador {
     	
     	this.trama = Objects.requireNonNull(trama, "trama es obligatorio");
     	
+    	
+    	this.material = Objects.requireNonNull(material, "material es obligatorio");
     	
         return new Prenda(tipoPrenda, material, colorPrimario, colorSecundario, trama);
     
@@ -52,9 +52,9 @@ public class Borrador {
 	}
 
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
+//	public void setCategoria(Categoria categoria) {
+//		this.categoria = categoria;
+//	}
 
 
 	public void especificarMaterial(Material material) {
@@ -68,25 +68,47 @@ public class Borrador {
 
 	public void validarMaterialConsistenteConTipoDePrenda(Material material) {
 		
-		if( !(this.tipoPrenda.categoria.equals(Categoria.SUPERIOR) && material.equals(Material.POLIESTER))
-				
-			|| !(this.tipoPrenda.categoria.equals(Categoria.CALZADO) && material.equals(Material.CUERO))
-				
-			|| !(this.tipoPrenda.categoria.equals(Categoria.INFERIOR) && material.equals(Material.LANA))
-					
-			|| !(this.tipoPrenda.categoria.equals(Categoria.ACCESORIOS) && material.equals(Material.PLASTICO))
-
-		) throw new MaterialException("Debe elegir el material correcto ");
+//		if( !(this.tipoPrenda.categoria.equals(Categoria.SUPERIOR) && material.equals(Material.POLIESTER))
+//				
+//			|| !(this.tipoPrenda.categoria.equals(Categoria.CALZADO) && material.equals(Material.CUERO))
+//				
+//			|| !(this.tipoPrenda.categoria.equals(Categoria.INFERIOR) && material.equals(Material.LANA))
+//					
+//			|| !(this.tipoPrenda.categoria.equals(Categoria.ACCESORIOS) && material.equals(Material.PLASTICO))
+//
+//		) throw new MaterialException("Debe elegir el material correcto ");
+//		
 		
+		
+		switch(this.tipoPrenda.categoria) {
+		  case SUPERIOR:
+			 System.out.println("superior"); //if( !(material.equals(Material.POLIESTER) || material.equals(Material.LANA))
+		    break;
+		  case INFERIOR:
+			  
+			  System.out.println("inf"); 
+		   
+		    break;
+		  case CALZADO: 
+			  System.out.println("calzaod"); 
+			  
+			  break;
+			  
+		  case ACCESORIOS:
+			  
+			  System.out.println("accese"); 
+			  
+			  break;
+		//  default:  throw new MaterialException("Debe elegir el material correcto ");
+		}
 		
 	}
 	
 
 	
-	public void especificarcolorPrimariol(Color colorPrimario) {
+	public void especificarColorPrimariol(Color colorPrimario) {
 		this.colorPrimario = Objects.requireNonNull(colorPrimario, "colorPrimario es obligatorio");
 	 }
-	
 	
 
 

@@ -7,7 +7,7 @@ public class Prenda {
 
     TipoPrenda tipoPrenda;
 
-    Categoria categoria;
+  //  Categoria categoria;
 
     Material material;
 
