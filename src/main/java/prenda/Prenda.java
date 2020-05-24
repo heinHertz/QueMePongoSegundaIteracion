@@ -1,6 +1,5 @@
-package main.java.prenda;
+package prenda;
 
-import main.java.utiles.*;
 
 import java.util.Objects;
 
@@ -16,38 +15,42 @@ public class Prenda {
 
     Color colorSecundario;
 
-    Trama trama;
+    public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario){
 
-
-    public Prenda( TipoPrenda tipoPrenda, Material material, Color colorPrimario, Color colorSecundario,Categoria categoria){
-
-
-        if( !tipoPrenda.getCategoria().equals(categoria)  ||
-                categoria.equals(null) ||
-                material.equals(null) ||
-                colorPrimario.equals(null) )
-            throw new PrendaException( "Debe ingresar una Prenda con los datos Correctos)");
-        else
-        {
-            this.tipoPrenda =  tipoPrenda;
-
-            this.categoria = categoria;
-
-            this.material = material;
-
-            this.colorPrimario = colorPrimario;
-
-            this.colorSecundario = colorSecundario;
-
-        }
+    	this.tipoPrenda = Objects.requireNonNull(tipoPrenda, "tipo de prenda es obligatorio");
+    	
+    	this.material = Objects.requireNonNull(material, "material es obligatorio");
+    			  
+    	this.colorPrimario = Objects.requireNonNull(colorPrimario, "color es obligatorio");
 
     }
 
+    
+    
+    public void setTipoPrenda(TipoPrenda tipoPrenda ) {    	    	
+  	  this.tipoPrenda = Objects.requireNonNull(tipoPrenda, "tipoPrenda es obligatorio");
+     }
+
+        
+    public void setCategoria(Categoria categoria) {    	
+    	  this.categoria = Objects.requireNonNull(categoria, "categoria no debe ser nulo");
+    }
+
+    
+    
+    public void setMaterial(Material material ) {
+    	this.material = Objects.requireNonNull(material, "material no debe ser nulo");
+    }
+
+    
+
+    public void setColorPrimario(Color colorPrimario) {
+    	this.colorPrimario = Objects.requireNonNull(colorPrimario, "color es obligatorio");
+    }
+
+    
     public void setColorSecundario(Color colorSecundario) {
-        if(   colorSecundario.equals(null)  )
-            throw new ColorException("Color Secundario ya Asignado");
-        else
-            this.colorSecundario = colorSecundario;
+    	this.colorSecundario = Objects.requireNonNull(colorSecundario, "color es obligatorio no nulo");
     }
 
     public boolean prendaPerteneceACategoria(Categoria categoria){
@@ -69,19 +72,6 @@ public class Prenda {
         return colorSecundario;
     }
 
-    public void restablecerEstadoAnterior(Prenda prenda){
-
-        return this;
-
-
-    }
-
-    public Prenda guardarBorrador(){
-
-        return this;
-
-    }
-
 
     // ESTO SIRVE SI AL COMPARAR DOS OBJETOS PRENDA , SON IGUALES SI TIENEN LAS MISMAS ATRIBUTOS CON LOS MISMOS VALORES
     @Override
@@ -93,10 +83,7 @@ public class Prenda {
                 colorPrimario.equals(prenda.colorPrimario) &&
                 Objects.equals(colorSecundario, prenda.colorSecundario) &&
                 material == prenda.material;
-    }
-
-
-
+    	}
 
 
 }
